@@ -316,7 +316,7 @@ jQuery.fn.springy = function(params) {
 			} else if (nearest !== null && nearest.node !== null && nearest.node.id === node.id) {
 				ctx.fillStyle = "#EEEEEE";
 			} else {
-				ctx.fillStyle = "#FFFFFF";
+				ctx.fillStyle = node.data.backgroundColor ||  "#FFFFFF";
 			}
 			ctx.fillRect(s.x - boxWidth/2, s.y - boxHeight/2, boxWidth, boxHeight);
 
